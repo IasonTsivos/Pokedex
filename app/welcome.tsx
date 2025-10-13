@@ -31,25 +31,23 @@ return (
         resizeMode="cover"
       >
         <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
-          {/* Content Container */}
+          
           <View style={styles.contentContainer}>
-            {/* Top Safe Area Content */}
+            
             <View style={styles.topSection}>
-              {/* Optional top content can go here */}
+              
             </View>
 
-            {/* Main Content - Title Section */}
             <View style={styles.titleSection}>
               <Text style={styles.welcomeTitle}>
                 Welcome to Pokédex
               </Text>
             </View>
 
-            {/* Bottom Safe Area Content - Button Section */}
             <View style={styles.bottomSection}>
               <TouchableOpacity 
                 style={styles.startButton} 
-                onPress={handleGetStarted}
+                onPress={handleGetStarted}  //go to pokedex screen
                 activeOpacity={0.8}
               >
                 <Text style={styles.startButtonText}>Start Exploring</Text>
