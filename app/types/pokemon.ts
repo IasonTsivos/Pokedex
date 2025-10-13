@@ -1,33 +1,30 @@
-// Pokemon type definitions
-
-import { SitemapType } from "expo-router";
-
+// Pokemon Type definitions
 export type PokemonType = 
-    | 'fire'
-    | 'water'
-    | 'grass'
-    | 'electric'
-    | 'dragon'
-    | 'psychic'
-    | 'ghost'
-    | 'dark'
-    | 'steel'
-    | 'fairy';
+  | 'fire' 
+  | 'water' 
+  | 'grass' 
+  | 'electric' 
+  | 'dragon' 
+  | 'psychic' 
+  | 'ghost' 
+  | 'dark' 
+  | 'steel' 
+  | 'fairy';
 
 export const POKEMON_TYPES: PokemonType[] = [
-    'fire',
-    'water',
-    'grass',
-    'electric',
-    'dragon',
-    'psychic',
-    'ghost',
-    'dark',
-    'steel',
-    'fairy'
+  'fire',
+  'water', 
+  'grass',
+  'electric',
+  'dragon',
+  'psychic',
+  'ghost',
+  'dark',
+  'steel',
+  'fairy'
 ];
 
-// Colors for each type for UI theme
+// Type colors for UI theme
 export const TYPE_COLORS: Record<PokemonType, string> = {
   fire: '#FF6D6D',
   water: '#6DB7FF', 
@@ -41,71 +38,62 @@ export const TYPE_COLORS: Record<PokemonType, string> = {
   fairy: '#EE99AC'
 };
 
-//Api response interfaces
+// API Response interfaces
 export interface PokemonSprite {
-    front_default: string | null;
-    other: {
-        'official-artwork': {
-            front_default: string | null;
-        };
+  front_default: string | null;
+  other: {
+    'official-artwork': {
+      front_default: string | null;
     };
+  };
 }
 
 export interface PokemonStat {
-    base_stat: number;
-    stat: {
-        name: string;
-    }
+  base_stat: number;
+  stat: {
+    name: string;
+  };
 }
 
 export interface PokemonTypeSlot {
-    slot: number;
-    type: {
-        name: string;
-        url: string;
-    };
-}
-
-export interface PokemonAbility {
-  ability: {
+  slot: number;
+  type: {
     name: string;
     url: string;
   };
-  is_hidden: boolean;
-  slot: number;
 }
 
-export interface Pokemon{
-    id: number;
-    name: string;
-    height: number;
-    weight: number;
-    spriter: PokemonSprite;
-    stats: PokemonStat[];
-    types: PokemonTypeSlot[];
-    abilities: PokemonAbility[];
+
+// Main Pokemon interface from PokéAPI
+export interface Pokemon {
+  id: number;
+  name: string;
+  sprites: PokemonSprite;
+  stats: PokemonStat[];
+  types: PokemonTypeSlot[];
 }
 
-// SIMPLIFIED POKEMON FOR OUR USE
+// Simplified Pokemon interface for UI
 export interface SimplePokemon {
-    id: number;
+  id: number;
+  name: string;
+  types: PokemonType[];
+  sprite: string;
+  stats: {
     name: string;
-    types: PokemonTypeSlot[];
-    sprite: string;
-    stats: {
-        name: string;
-        value: number;
-    }[];
+    value: number;
+  }[];
 }
 
+// API list response
 export interface PokemonListResponse {
-    count: number;
-    next: string | null;
-    previous: string | null;
-    results: {
-        name: string;
-        url: string;
-    }[];
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: {
+    name: string;
+    url: string;
+  }[];
 }
 
 // Type-specific list response
