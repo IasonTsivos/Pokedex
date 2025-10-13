@@ -1,5 +1,7 @@
 // Pokemon type definitions
 
+import { SitemapType } from "expo-router";
+
 export type PokemonType = 
     | 'fire'
     | 'water'
@@ -49,3 +51,72 @@ export interface PokemonSprite {
     };
 }
 
+export interface PokemonStat {
+    base_stat: number;
+    stat: {
+        name: string;
+    }
+}
+
+export interface PokemonTypeSlot {
+    slot: number;
+    type: {
+        name: string;
+        url: string;
+    };
+}
+
+export interface PokemonAbility {
+  ability: {
+    name: string;
+    url: string;
+  };
+  is_hidden: boolean;
+  slot: number;
+}
+
+export interface Pokemon{
+    id: number;
+    name: string;
+    height: number;
+    weight: number;
+    spriter: PokemonSprite;
+    stats: PokemonStat[];
+    types: PokemonTypeSlot[];
+    abilities: PokemonAbility[];
+}
+
+// SIMPLIFIED POKEMON FOR OUR USE
+export interface SimplePokemon {
+    id: number;
+    name: string;
+    types: PokemonTypeSlot[];
+    sprite: string;
+    stats: {
+        name: string;
+        value: number;
+    }[];
+}
+
+export interface PokemonListResponse {
+    count: number;
+    next: string | null;
+    previous: string | null;
+    results: {
+        name: string;
+        url: string;
+    }[];
+}
+
+// Type-specific list response
+export interface TypeResponse {
+  id: number;
+  name: string;
+  pokemon: {
+    pokemon: {
+      name: string;
+      url: string;
+    };
+    slot: number;
+  }[];
+}
