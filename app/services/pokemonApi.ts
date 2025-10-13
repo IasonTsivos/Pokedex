@@ -19,6 +19,43 @@ class PokemonApiService {
     this.cache.set(url, data);
     return data;
     }
+
+    // Get pokemon by type
+    async getPokemonByType(type: PokemonType, limit = 20, offset = 0): Promise<SimplePokemon[]>{
+        const url = `${BASE_URL}/type/${type}`;
+        const TypeResponse: TypeResponse = await this.cachedFetch(url);
+
+        const pokemonUrls = TypeResponse.pokemon
+            .slice(offset,offset + limit)
+            .map(p => p.pokemon.url);
+
+        const pokemonPromises = pokemonUrls.map(async (url) => {
+            const pokemon: Pokemon = await this.cachedFetch(url);
+            return this.transformPokemon(pokemon);
+        });
+
+        return Promise.all(pokemonPromises);
+    }
+
+    //Get the count of pokemon for a type
+    async getPokemonCountByType(type: PokemonType): Promise<number>{
+        const url = `${BASE_URL}/type/${type}`;
+        const TypeResponse: TypeResponse = await this.cachedFetch(url);
+        return  TypeResponse.pokemon.length;
+    }
+
+    //Get all pokemon of our supported types
+    async getAllSupportedPokemon(): Promise<SimplePokemon[]> {
+        const allPokemonPromises = POKEMON_TYPES.map(type => this.getPokemonByType(type));
+        const allPokemonArrays = await Promise.all(allPokemonPromises);
+
+        const allPokemon = allPokemonArrays.flat();
+        const uniquePokemon = allPokemon.filter((pokemon, index, self) => 
+            index === self.findIndex(p => p.id === pokemon.id));
+
+        return uniquePokemon.sort((a, b) => a.id - b.id);
+    }
+
     // Transform pokemon to our simplified version
     private transformPokemon(pokemon: Pokemon): SimplePokemon {
         // Get only supported types
@@ -44,12 +81,7 @@ class PokemonApiService {
             };
     }
 
-    // GETTER FOR SINGLE pokemon from name or ID
-    async getPokemon(nameOrId: string | number): Promise<SimplePokemon> {
-        const url = `${BASE_URL}/pokemon/${nameOrId}`;
-        const pokemon: Pokemon = await this.cachedFetch(url);
-
-        return this.transformPokemon(pokemon);
-    }
+    
 }
 
+export const pokemonApi = new PokemonApiService();
