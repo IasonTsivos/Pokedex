@@ -21,27 +21,31 @@ The **Pokédex App** is designed to be the ultimate companion for Pokémon enthu
 - **Type-Coded Colors**: Each Pokémon type has its distinctive color for instant recognition
 - **High-Quality Assets**: Official Pokémon artwork and custom SVG type icons
 
-## 📸 Screenshots
+### App Screenshots
+*A glimpse into the Pokédex experience*
 
-### Welcome Screen
-*A beautiful introduction that sets the tone for the entire experience*
-
-<img src="/assets/screenshots/welcome.png" alt="Welcome Screen" width="400"/>
-
-### Main Pokédex Interface
-*The heart of the app - where discovery happens*
-
-<img src="/assets/screenshots/pokedex_.png" alt="Pokédex Interface" width="400"/>
-
-### Type Filtering
-*Explore Pokémon by their elemental types*
-
-<img src="/assets/screenshots/type_search.png" alt="Type Filter Dropdown" width="400"/>
-
-### Pokémon Grid View
-*Explore Pokémon by their elemental types & name*
-
-<img src="/assets/screenshots/type_name_search.png" alt="Pokémon Grid" width="400"/>
+<table>
+  <tr>
+    <td align="center">
+      <b>Welcome Screen</b><br>
+      <img src="/assets/screenshots/welcome.png" alt="Welcome Screen" width="350"/>
+    </td>
+    <td align="center">
+      <b>Main Pokédex Interface</b><br>
+      <img src="/assets/screenshots/pokedex_.png" alt="Pokédex Interface" width="350"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Type Filtering</b><br>
+      <img src="/assets/screenshots/type_search.png" alt="Type Filter Dropdown" width="350"/>
+    </td>
+    <td align="center">
+      <b>Pokémon Grid View</b><br>
+      <img src="/assets/screenshots/type_name_search.png" alt="Pokémon Grid" width="350"/>
+    </td>
+  </tr>
+</table>
 
 
 ## 🚀 Features
