@@ -11,12 +11,12 @@ The **Pokédex App** is designed to be the ultimate companion for Pokémon enthu
 - **Minimalist Design**: Every element serves a purpose, reducing visual clutter
 - **Intuitive Navigation**: Users can instantly understand how to interact with the app
 
-### 🔍 **Focused Discovery** 
+### **Focused Discovery** 
 - **Type-Based Exploration**: Filter Pokémon by specific types (Fire, Water, Grass, Electric, Dragon, Psychic, Ghost, Dark, Steel, and Fairy)
 - **Smart Search**: Quickly find Pokémon by name with real-time search functionality
 - **Curated Experience**: Focus on 10 carefully selected Pokémon types for a refined experience
 
-### 🎨 **Visual Excellence**
+### **Visual Excellence**
 - **Consistent Theme**: Red borders and accents create a cohesive visual identity
 - **Type-Coded Colors**: Each Pokémon type has its distinctive color for instant recognition
 - **High-Quality Assets**: Official Pokémon artwork and custom SVG type icons
@@ -51,42 +51,40 @@ The **Pokédex App** is designed to be the ultimate companion for Pokémon enthu
 ## 🚀 Features
 
 ### Core Functionality
-- **🏠 Welcome Screen**: Engaging intro with beautiful background imagery
-- **📋 Pokédex Browser**: Grid-based layout for easy Pokémon browsing
-- **🏷️ Type Filtering**: Filter by 10 supported Pokémon types with visual type indicators
-- **🔎 Real-time Search**: Instant search results as you type
-- **📊 Pokémon Details**: View stats, types, and official artwork
-- **⚡ Smart Loading**: Efficient pagination for large datasets
-- **🎯 Error Handling**: Graceful error states with retry functionality
+- ** Welcome Screen**: Engaging intro with beautiful background imagery
+- ** Pokédex Browser**: Grid-based layout for easy Pokémon browsing
+- ** Type Filtering**: Filter by 10 supported Pokémon types with visual type indicators
+- ** Real-time Search**: Instant search results as you type
+- ** Pokémon Details**: View stats, types, and official artwork
+- ** Smart Loading**: Efficient pagination for large datasets
+- ** Error Handling**: Graceful error states with retry functionality
 
 ### Design Features
-- **🎨 Consistent Theming**: White backgrounds, black text, red accents
-- **🌈 Type Color Coding**: Each Pokémon type has its signature color
-- **📱 Responsive Design**: Optimized for various screen sizes
-- **✨ Smooth Animations**: Engaging micro-interactions throughout the app
-- **🔄 Loading States**: Custom Pokéball loading animations
+- ** Consistent Theming**: White backgrounds, black text, red accents
+- ** Type Color Coding**: Each Pokémon type has its signature color
+- ** Responsive Design**: Optimized for various screen sizes
+
 
 ## 🛠️ Technical Stack
 
 ### Framework & Platform
-- **⚛️ React Native**: Cross-platform mobile development
-- **🚀 Expo**: Streamlined development and deployment
-- **📱 Expo Router**: File-based navigation system
+- ** React Native**: Cross-platform mobile development
+- ** Expo**: Streamlined development and deployment
+- ** Expo Router**: File-based navigation system
 
 ### Data & API
-- **🌐 PokéAPI**: Official Pokémon data source
-- **📡 REST API Integration**: Efficient data fetching and caching
-- **🔄 Pagination**: Smart data loading for optimal performance
+- ** PokéAPI**: Official Pokémon data source
+- ** REST API Integration**: Efficient data fetching and caching
+- ** Pagination**: Smart data loading for optimal performance
 
 ### UI/UX Libraries
-- **🛡️ Safe Area Context**: Proper handling of device safe areas
-- **🎨 Custom Components**: Reusable, themed UI components
-- **📊 FlatList**: Optimized list rendering for large datasets
+- ** Safe Area Context**: Proper handling of device safe areas
+- ** Custom Components**: Reusable, themed UI components
+
 
 ### Assets & Icons
-- **🎭 Custom SVG Icons**: Type icons stored in `/assets/types/`
-- **🖼️ Official Artwork**: High-quality Pokémon sprites and images
-- **🎨 Vector Icons**: Ionicons for UI elements
+- ** Custom SVG Icons**: Type icons stored in `/assets/types/`
+- ** Official Artwork**: High-quality Pokémon sprites and images
 
 ## 📱 Supported Pokémon Types
 
@@ -150,45 +148,6 @@ The app focuses on 10 carefully selected Pokémon types, each with distinct visu
 4. **Run on your device**
    - Scan the QR code with Expo Go (Android) or Camera app (iOS)
    - Or use an emulator/simulator
-
-## 🎨 Design System
-
-### Colors
-- **Primary Background**: `#FFFFFF` (White)
-- **Primary Text**: `#000000` (Black) 
-- **Accent Color**: `#DC2626` (Red)
-- **Type Colors**: See table above
-
-### Typography
-- **Headings**: Bold, clear hierarchy
-- **Body Text**: High contrast for readability
-- **Interactive Text**: Consistent styling across buttons and links
-
-### Components
-- **Borders**: 2-3px red borders for definition
-- **Border Radius**: 8-15px for modern, rounded feel
-- **Shadows**: Subtle shadows for depth
-- **Spacing**: Consistent 8px grid system
-
-## 📈 Future Enhancements
-
-### Planned Features
-- **🔍 Pokémon Detail Views**: Comprehensive stats, evolution chains, and move sets
-- **💾 Favorites System**: Save and organize favorite Pokémon
-- **🔄 Additional Types**: Expand beyond the current 10 types
-- **📊 Compare Mode**: Side-by-side Pokémon comparisons
-- **🌙 Dark Mode**: Alternative theme for low-light usage
-- **🎮 Interactive Features**: Mini-games and quizzes
-
-### Technical Improvements
-- **💾 Offline Support**: Cache Pokémon data for offline browsing
-- **🔄 Background Sync**: Update data seamlessly in the background
-- **📈 Performance Optimization**: Further optimize loading and rendering
-- **🧪 Testing Suite**: Comprehensive unit and integration tests
-
-## 🤝 Contributing
-
-We welcome contributions that align with our vision of simplicity, functionality, and visual excellence. Please ensure any contributions maintain the established design principles and code quality standards.
 
 ## 📄 License
 
