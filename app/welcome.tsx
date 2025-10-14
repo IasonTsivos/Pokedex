@@ -11,7 +11,7 @@ import{
 } from 'react-native';
 
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { styles } from "@/components/WelcomeScreenStyles"; // my styles file
+import { styles } from "@/components/styles/WelcomeScreenStyles"; // my styles file
 
 const { width } = Dimensions.get('window');
 

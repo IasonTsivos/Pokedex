@@ -35,7 +35,7 @@ export const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon, onPress }) =>
       onPress={onPress}
       activeOpacity={0.8}
     >
-      {/* Type Quarter Circle - Top Right */}
+      {/* Badge Type - Top Right */}
       <View style={[styles.quarterCircle, { backgroundColor: cardColor }]}>
         <View style={styles.quarterCircleContent}>
           <TypeIcon type={primaryType} size={25} />
