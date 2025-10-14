@@ -41,7 +41,7 @@ The **Pokédex App** is designed to be the ultimate companion for Pokémon enthu
       <img src="/assets/screenshots/type_search.png" alt="Type Filter Dropdown" width="350"/>
     </td>
     <td align="center">
-      <b>Pokémon Grid View</b><br>
+      <b>Type & Name Filtering</b><br>
       <img src="/assets/screenshots/type_name_search.png" alt="Pokémon Grid" width="350"/>
     </td>
   </tr>
