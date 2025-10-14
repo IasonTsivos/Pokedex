@@ -26,26 +26,22 @@ The **Pokédex App** is designed to be the ultimate companion for Pokémon enthu
 ### Welcome Screen
 *A beautiful introduction that sets the tone for the entire experience*
 
-
-![Welcome Screen](/assets/screenshots/welcome.png)
+<img src="/assets/screenshots/welcome.png" alt="Welcome Screen" width="400"/>
 
 ### Main Pokédex Interface
 *The heart of the app - where discovery happens*
 
-
-![Pokédex Interface](/assets/screenshots/pokedex_.png)
+<img src="/assets/screenshots/pokedex_.png" alt="Pokédex Interface" width="400"/>
 
 ### Type Filtering
 *Explore Pokémon by their elemental types*
 
-
-![Type Filter Dropdown](/assets/screenshots/type_search.png)
+<img src="/assets/screenshots/type_search.png" alt="Type Filter Dropdown" width="400"/>
 
 ### Pokémon Grid View
 *Explore Pokémon by their elemental types & name*
 
-
-![Pokémon Grid](/assets/screenshots/type_name_search.png)
+<img src="/assets/screenshots/type_name_search.png" alt="Pokémon Grid" width="400"/>
 
 
 ## 🚀 Features
