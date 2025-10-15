@@ -129,8 +129,8 @@ The app focuses on 10 carefully selected Pokémon types, each with distinct visu
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
-   cd PokedexApp
+   git clone https://github.com/IasonTsivos/Pokedex
+   cd Pokedex
    ```
 
 2. **Install dependencies**
